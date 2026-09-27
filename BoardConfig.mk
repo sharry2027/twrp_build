@@ -1,0 +1,18 @@
+# Target Architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_CPU_ABI2 := 
+TARGET_BOARD_PLATFORM := mt6877
+
+# Kernel Configurations from Live DTB
+TARGET_NO_KERNEL := false
+BOARD_KERNEL_CMDLINE := bootconfig loop.max_part=7
+BOARD_KERNEL_BASE := 0x40078000
+BOARD_KERNEL_PAGESIZE := 4096
+
+# TWRP Specific Flags
+DEVICE_MANIFEST_FILE := device.xml
+RECOVERY_VARIANT := twrp
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TW_THEME := portrait_hdpi
